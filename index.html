@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevToys Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body style="background-color: aqua;">
-    <h2 style="background-color: red;">FF</h2>
+<body>
+    <div class="app">
+    <aside id="sidebar" class="sidebar">
+        <div class="logo">DevToys</div>
+      <div style="display: flex;align-items: center;gap: 10px;">
+        <i onclick="toggleSidebar()" class="fa-solid fa-bars" style="margin-top: -20px;"></i>
+          <input type="text" class="search" placeholder="Type to search for tools..." />
+      </div>
+      
+      <nav class="menu">
+        <div class="menu-group" >
+            <i class="fas fa-home"></i>
+          <div class="menu-item">All tools</div>
+        </div>
+
+        <div class="menu-group">
+            <i class="fas fa-layer-group"></i>            
+            <div class="menu-header">Converters</div>
+        </div>
+        
+        <div class="menu-group">
+            <i class="fas fa-code"></i>
+          <div class="menu-header">Encoders / Decoders</div>
+        </div>
+
+        <div class="menu-group">
+            <i class="fas fa-terminal"></i>
+
+          <div class="menu-header">Formatters</div>
+        </div>
+
+        <div class="menu-group">
+            <i class="fas fa-exchange-alt"></i>
+
+            <div class="menu-header">Generators</div>
+        </div>
+
+        <div class="menu-group">
+            <i class="fas fa-image"></i>
+
+          <div class="menu-header">Graphic</div>
+        </div>
+
+        <div class="menu-group">
+            <i class="fas fa-link"></i>
+
+            <div class="menu-header">Testers</div>
+        </div>
+
+        <div class="menu-group">
+            <i class="fas fa-font"></i>
+
+            <div class="menu-header">Text</div>
+        </div>
+      </nav>
+
+      <div class="footer">
+        <div style="margin-left: 5px;">⚙ Settings</div>
+        <div>🔌 Manage extensions</div>
+        <div>❤️ Support the development</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <h1>Welcome to DevToys</h1>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="icon">🖼️</div>
+          <div class="title">Base64 Image Encoder / Decoder</div>
+          <div class="desc">Encode and decode Base64 image data</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="icon">🔤</div>
+          <div class="title">Base64 Text Encoder / Decoder</div>
+          <div class="desc">Encode and decode Base64 text data</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="icon">📜</div>
+          <div class="title">Certificate Decoder</div>
+          <div class="desc">Decode a certificate</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="icon">🌈</div>
+          <div class="title">Color Blindness Simulator</div>
+          <div class="desc">Simulate color blindness on a picture or screenshot</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="icon">🕒</div>
+          <div class="title">Cron expression parser</div>
+          <div class="desc">Parse Cron expressions to get scheduled dates</div>
+        </div>
+
+        <div class="tool-card">
+          <div class="icon">📅</div>
+          <div class="title">Date Converter</div>
+          <div class="desc">Convert date to human-readable and vice versa</div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
