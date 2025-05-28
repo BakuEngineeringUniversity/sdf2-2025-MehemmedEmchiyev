@@ -32,9 +32,9 @@
           <div class="menu-header">Encoders / Decoders</div>
         </div>
         <div class="submenu">
+
           <div class="menu-item" onclick="showTool('base64-image')">Base64 Image Encoder / Decoder</div>
           <div class="menu-item" onclick="showTool('base64-text')">Base64 Text Encoder / Decoder</div>
-          <div class="menu-item" onclick="showTool('certificate')">Certificate Decoder</div>
         </div>
 
         <div class="menu-group">
@@ -82,7 +82,7 @@
     <main class="main">
       <!-- Home Screen -->
       <div id="home-screen" class="tool-content active">
-        <h1>Welcome to DevToys</h1>
+        <h1 style="font-style: italic;color: black;">Welcome to DevToys</h1>
         <div class="tools-grid">
           <div class="tool-card" onclick="showTool('base64-image')">
             <div class="icon">🖼️</div>
@@ -94,12 +94,6 @@
             <div class="icon">🔤</div>
             <div class="title">Base64 Text Encoder / Decoder</div>
             <div class="desc">Encode and decode Base64 text data</div>
-          </div>
-
-          <div class="tool-card" onclick="showTool('certificate')">
-            <div class="icon">📜</div>
-            <div class="title">Certificate Decoder</div>
-            <div class="desc">Decode a certificate</div>
           </div>
 
           <div class="tool-card" onclick="showTool('color-blindness')">
@@ -217,38 +211,6 @@
             </div>
             <div class="output-area">
               <textarea id="text-output" readonly></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Certificate Decoder -->
-      <div id="certificate" class="tool-content">
-        <h1>Certificate Decoder</h1>
-        <div class="tool-container">
-          <div class="tool-section">
-            <div class="section-header">
-              <h2>Certificate Input</h2>
-              <button class="action-btn" onclick="clearText('cert-input')">Clear</button>
-            </div>
-            <div class="input-area">
-              <textarea id="cert-input" placeholder="Paste your certificate (PEM format) here..."></textarea>
-              <div class="file-upload">
-                <input type="file" id="cert-file" accept=".pem,.cer,.crt" onchange="handleCertFileUpload()" />
-                <label for="cert-file">Upload Certificate</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="tool-section">
-            <div class="section-header">
-              <h2>Certificate Details</h2>
-              <button class="action-btn" onclick="decodeCertificate()">Decode</button>
-            </div>
-            <div class="output-area cert-output">
-              <div id="cert-details">
-                <p>Certificate information will appear here after decoding</p>
-              </div>
             </div>
           </div>
         </div>

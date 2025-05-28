@@ -96,7 +96,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   height: 100vh;
-  background: linear-gradient(135deg, #1a1a2e 25%, #16213e 100%);
+  background-color: gray;
   color: #fff;
   overflow: hidden;
 }
@@ -227,7 +227,6 @@ body {
   padding: 2rem;
   transition: margin-left 0.3s ease;
   overflow-y: auto;
-  background-color: rgba(255, 255, 255, 0.02);
 }
 
 .main h1 {
